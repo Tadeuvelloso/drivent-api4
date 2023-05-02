@@ -23,7 +23,7 @@ export async function postNewBooking(req: AuthenticatedRequest, res: Response, n
 
     return res.status(httpStatus.OK).send(booking);
   } catch (error) {
-    return res.sendStatus(httpStatus.FORBIDDEN);
+    return res.sendStatus(403);
   }
 }
 
